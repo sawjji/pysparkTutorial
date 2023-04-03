@@ -9,13 +9,13 @@ import { Box, Image, Text, Flex, Divider, Table, Input, Button,
   TableContainer} from "@chakra-ui/react";
 import React, { useState } from "react";
 
-import SentenceBox from "./PySpark tutorial components/SentenceBox";
-import AnswerBox from "./PySpark tutorial components/AnswerBox";
-import { getSentence, getAnswers } from "./PySpark tutorial components/TextConverter";
-import Results from "./PySpark tutorial components/Results";
+import SentenceBox from "../PySpark tutorial components/SentenceBox";
+import AnswerBox from "../PySpark tutorial components/AnswerBox";
+import { getSentence, getAnswers } from "../PySpark tutorial components/TextConverter";
+import Results from "../PySpark tutorial components/Results";
+import Navbar from "../Navbar.js"
 
-
-import { PrimaryButton } from "./PySpark tutorial components/styled";
+import { PrimaryButton } from "../PySpark tutorial components/styled";
 
 const text = "The <brown> fox <jumped> over the <dog>";
 
@@ -1788,24 +1788,6 @@ export default function PySparkTutorial() {
 
         </Box>
       </Box>
-
-
-      
-
-      <SentenceBox
-          marked={showResults}
-          onDrop={onDrop}
-          sentence={state.sentence}
-        />
-
-
-        <AnswerBox answers={state.answers} />
-        <div>
-          <PrimaryButton onClick={test}>Check result</PrimaryButton>
-        </div>
-        {showResults && <Results data={state.sentence} />}
-
-
       </Box>
 
 
