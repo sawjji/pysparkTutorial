@@ -62,6 +62,28 @@ export default function Homepage() {
           </Box>
         </Flex>
         <Flex mt='15px'></Flex>
+        <Text align={'left'} ms='-3px' width='94%'>If we want to use lineLenghts again, we can add</Text>
+        <Flex mt='15px'></Flex>
+        <Flex align='horizontal' width='94%'>
+          <Text mt='14px' fontWeight={'bold'}>In [2]:</Text>
+          <Flex w='10px'></Flex>
+          <Box w='94%' bg='black' rounded='sm' p={3} mt='4px' ms='13px' align='left'>
+            <Flex color='white'>
+              <pre>
+              {"lineLengths.persist()"}
+              </pre>
+            </Flex>
+          </Box>
+        </Flex>
+        <Flex mt='15px'></Flex>
+        <Text align={'left'} ms='-3px' width='94%'>before the reduce function, causing lineLengths to be saved in memory after first computation. In general, 
+        RDD will break large datasets that don't fit into the memory of a single computer into smaller partitions and distribute them across nodes in the cluster. 
+        Since each partition contains a portion of the data and can be processed independently on different simultaneously, RDDs are considered "resilient". They 
+        can recover from failures and if a node in the cluster fails, it can recompute the lost partition of data on another node. This resilience ensures that the 
+        data processing continues even in the face of failures. Taking advantage of parallel processing, RDDs are distributed as each node in the cluster can work 
+        on its assigned partition of data, performing operations like filtering, mapping, or aggregating. The results of these operations can be combined to produce 
+        the final output.</Text>
+        <Flex mt='15px'></Flex>
         <Text align={'left'} ms='-3px' width='94%'>Hadoop MapReduce is a programming model for processing big datasets with a parallel, distributed algorithm. 
           Hadoop is used extensively to analyze datasets since it is based on MapReduce, a simple programming model. Its computation is scalable, flexible, fault-tolerant, 
           and cost effective. A large challenge for MapReduce is the sequential multi-step process it takes to run a job. For each step, MapReduce reads data from the cluster and 
@@ -70,6 +92,7 @@ export default function Homepage() {
         <Flex mt='25px'></Flex>
         <Box boxSize='sm'>
           <Image src='https://www.tutorialspoint.com/hadoop/images/mapreduce_algorithm.jpg' alt='Dan Abramov' />
+          <Text>Image credit: Tutorialspoint</Text>
         </Box>
         <Flex mt='-190px'></Flex>
         <Text align={'left'} ms='-3px' width='94%'>The MapReduce program executed within three stages: map stage, shuffle stage, and reduce stage. The map/mapper’s job is to process 

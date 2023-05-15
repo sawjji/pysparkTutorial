@@ -607,8 +607,7 @@ export default function PySparkTutorial() {
         <Flex mt='25px'></Flex>
         <Text fontWeight={'bold'} fontSize='25' align={'left'} ms='50px'>PySpark Tutorial</Text>
         <Divider orientation='horizontal' width='94%' borderColor={'Black'}/>
-        <Text align={'left'} ms='-3px' width='94%'>The following is a demo for using PySpark. We will be using the following dataset:</Text>
-        <Text align={'left'} ms='-3px' width='94%'>(((INSERT IMAGE)))</Text>
+
         <Flex mt='25px'></Flex>
         <Text align={'left'} ms='-3px' width='94%' fontWeight={'bold'}>The following process is the same for every time we start a PySpark session</Text>
         <Flex mt='8px'></Flex>
@@ -688,8 +687,6 @@ export default function PySparkTutorial() {
         <Flex mt='45px'></Flex>
         <Text fontWeight={'bold'} fontSize='25' align={'left'} ms='50px'>Now You Try</Text>
         <Divider orientation='horizontal' width='94%' borderColor={'Black'}/>
-        <Text align={'left'} ms='-3px' width='94%'>We are given the following dataset:</Text>
-        <Text align={'left'} ms='-3px' width='94%'>((((INSERT IMAGE))))</Text>
         <Flex mt='25px'></Flex>
         <Box bg='white'>
 

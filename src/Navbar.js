@@ -9,6 +9,7 @@ export default function Navbar() {
       <ul>
         <CustomLink to="/pricing">Functionality</CustomLink>
         <CustomLink to="/about">Introduction to Pyspark</CustomLink>
+        <CustomLink to="/Spark">NoSQL and Spark</CustomLink>
       </ul>
     </nav>
   )
